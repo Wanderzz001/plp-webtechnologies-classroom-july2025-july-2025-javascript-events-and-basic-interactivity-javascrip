@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SmartGadget Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <header>
+    <h1>SmartGadget Store</h1>
+    <nav>
+      <ul>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#signup">Sign Up</a></li>
+      </ul>
+      <button id="toggleTheme">🌙</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Discover the Future of Gadgets</h2>
+    <p>Explore our range of innovative products designed to make life easier.</p>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="tabs">
+      <button class="tab-btn active" data-target="smartwatch">Smartwatch</button>
+      <button class="tab-btn" data-target="earbuds">Wireless Earbuds</button>
+      <button class="tab-btn" data-target="drone">Mini Drone</button>
+    </div>
+    <div class="tab-content">
+      <div id="smartwatch" class="tab-pane active">
+        <h3>Smartwatch</h3>
+        <p>Track fitness, calls, and notifications—all from your wrist.</p>
+      </div>
+      <div id="earbuds" class="tab-pane">
+        <h3>Wireless Earbuds</h3>
+        <p>Experience high-quality sound with noise cancellation.</p>
+      </div>
+      <div id="drone" class="tab-pane">
+        <h3>Mini Drone</h3>
+        <p>Capture stunning aerial shots with ease.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>FAQ</h2>
+    <div class="faq">
+      <h3 class="faq-question">Do you offer free shipping?</h3>
+      <p class="faq-answer hidden">Yes, free worldwide shipping on orders above $50.</p>
+    </div>
+    <div class="faq">
+      <h3 class="faq-question">What payment methods do you accept?</h3>
+      <p class="faq-answer hidden">We accept credit cards, PayPal, and mobile wallets.</p>
+    </div>
+  </section>
+
+
+  <section id="signup">
+    <h2>Join Our Newsletter</h2>
+    <form id="signupForm">
+      <label>Name: <input type="text" id="name"></label><br>
+      <label>Email: <input type="text" id="email"></label><br>
+      <label>Password: <input type="password" id="password"></label><br>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p id="formFeedback"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 SmartGadget Store</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
